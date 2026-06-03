@@ -684,8 +684,8 @@ p {
 }
 
 .category-icon {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   margin: 0 auto var(--space-lg);
   border-radius: var(--radius-2xl);
   display: flex;
