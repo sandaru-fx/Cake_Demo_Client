@@ -82,6 +82,10 @@
   transition: transform var(--transition-spring);
 }
 
+.category-card-large:hover .cat-real-bg {
+  transform: scale(1.05);
+}
+
 .category-card-large:hover .cat-icon-large {
   transform: scale(1.1) rotate(5deg);
 }

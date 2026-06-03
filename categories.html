@@ -95,11 +95,11 @@
           
           return `
             <div class="category-card-large reveal">
-              <div class="cat-card-header" style="background: ${cat.gradient};">
-                <div class="cat-icon-large">${cat.emoji}</div>
-                <div class="cat-info">
-                  <h2>${cat.name}</h2>
-                  <p>Premium Collection</p>
+              <div class="cat-card-header" style="padding: 0; position: relative; height: 200px; overflow: hidden;">
+                <img src="${cat.image}" alt="${cat.name}" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);" class="cat-real-bg">
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.1)); display: flex; flex-direction: column; justify-content: flex-end; padding: var(--space-2xl);">
+                  <h2 style="color: white; font-size: var(--fs-3xl); text-shadow: 0 2px 4px rgba(0,0,0,0.5); margin-bottom: 4px;">${cat.name}</h2>
+                  <p style="color: rgba(255,255,255,0.8); font-weight: 500;">Premium Collection</p>
                 </div>
               </div>
               <div class="cat-card-body">

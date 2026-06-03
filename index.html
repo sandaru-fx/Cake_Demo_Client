@@ -308,8 +308,8 @@
       if (catGrid) {
         catGrid.innerHTML = CATEGORIES.map((cat, i) => `
           <a href="products.html?category=${cat.id}" class="category-card reveal" style="transition-delay: ${i * 100}ms;">
-            <div class="category-icon" style="background: ${cat.gradient}; color: white;">
-              ${cat.emoji}
+            <div class="category-icon" style="background: transparent; padding: 0;">
+              <img src="${cat.image}" alt="${cat.name}" class="cat-real-icon">
             </div>
             <h3>${cat.name}</h3>
             <p>${cat.description}</p>

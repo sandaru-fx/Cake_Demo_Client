@@ -694,8 +694,20 @@ p {
   transition: transform var(--transition-spring);
 }
 
+.cat-real-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  transition: transform var(--transition-spring);
+}
+
 .category-card:hover .category-icon {
   transform: scale(1.1) rotate(-5deg);
+}
+
+.category-card:hover .cat-real-icon {
+  transform: scale(1.1);
 }
 
 .category-card h3 {
