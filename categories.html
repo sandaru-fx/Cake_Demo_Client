@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories — CakeTools</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/categories.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎂</div>
+        <span>CakeTools</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="categories.html" class="active">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-right" style="display:flex;align-items:center;gap:12px;">
+        <div class="search-wrapper desktop-search">
+          <input type="text" class="search-bar" id="searchBarDesktop" placeholder="Search cake tools..." autocomplete="off">
+          <span class="search-icon">🔍</span>
+          <div class="search-dropdown" id="searchDropdownDesktop"></div>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <section class="categories-page">
+    <!-- 3D Canvas Background -->
+    <div id="categoriesBg" class="categories-bg-canvas"></div>
+    
+    <div class="container categories-content">
+      <div class="categories-header reveal">
+        <h1>Explore Categories</h1>
+        <p>Find the perfect tools for your next masterpiece, organized to help you shop faster.</p>
+      </div>
+      
+      <div class="categories-grid-main" id="categoriesMainGrid" data-stagger>
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:white;">
+            <div class="logo-icon">🎂</div>
+            <span>CakeTools</span>
+          </a>
+          <p>Your one-stop shop for premium cake decorating tools.</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 CakeTools. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/three-scenes.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('categoriesMainGrid');
+      
+      if (grid) {
+        grid.innerHTML = CATEGORIES.map((cat, i) => {
+          const products = getProductsByCategory(cat.id).slice(0, 3);
+          const chips = products.map(p => `<span class="preview-chip">${p.name.split(' ')[0]} ${p.name.split(' ')[1] || ''}</span>`).join('');
+          
+          return `
+            <div class="category-card-large reveal">
+              <div class="cat-card-header" style="background: ${cat.gradient};">
+                <div class="cat-icon-large">${cat.emoji}</div>
+                <div class="cat-info">
+                  <h2>${cat.name}</h2>
+                  <p>Premium Collection</p>
+                </div>
+              </div>
+              <div class="cat-card-body">
+                <p class="cat-desc">${cat.description}</p>
+                <div class="cat-preview">
+                  ${chips}
+                  <span class="preview-chip" style="background: var(--color-primary-lighter); color: var(--color-primary-dark)">+ more</span>
+                </div>
+                <div class="cat-action">
+                  <span class="cat-count">${cat.productCount} Items Available</span>
+                  <a href="products.html?category=${cat.id}" class="btn btn-primary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+      
+      // Init Background 3D Scene
+      try {
+        new BackgroundScene('categoriesBg');
+      } catch(e) {
+        console.log('3D Scene error:', e);
+      }
+    });
+  </script>
+</body>
+</html>

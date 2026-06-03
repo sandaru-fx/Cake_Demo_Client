@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail — CakeTools</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/product-detail.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎂</div>
+        <span>CakeTools</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-right" style="display:flex;align-items:center;gap:12px;">
+        <div class="search-wrapper desktop-search">
+          <input type="text" class="search-bar" id="searchBarDesktop" placeholder="Search cake tools..." autocomplete="off">
+          <span class="search-icon">🔍</span>
+          <div class="search-dropdown" id="searchDropdownDesktop"></div>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <div class="container">
+    <nav class="breadcrumb" style="margin-bottom: var(--space-2xl);">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <a href="products.html">Products</a>
+      <span class="separator">/</span>
+      <span id="breadcrumbCurrent">Loading...</span>
+    </nav>
+  </div>
+
+  <section class="product-detail-section" id="productContent">
+    <div class="container">
+      <div class="product-detail-grid">
+        
+        <!-- Interactive 3D Showcase -->
+        <div class="product-showcase reveal-left" id="productShowcase">
+          <div id="productCanvas" class="product-showcase-canvas"></div>
+          
+          <div class="product-showcase-overlay">
+            <div class="showcase-badges" id="productBadges">
+              <!-- Filled by JS -->
+            </div>
+            
+            <div class="interaction-hint">
+              <span>👆</span> Drag to rotate 3D view
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info reveal-right">
+          <div>
+            <a href="#" class="product-category-link" id="productCategory">Category</a>
+            <h1 class="product-title" id="productTitle">Loading...</h1>
+          </div>
+
+          <div class="product-meta">
+            <div class="product-reviews" id="productRating">
+              <!-- Filled by JS -->
+            </div>
+            <div class="product-stock" id="productStock">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+
+          <div class="product-price-block">
+            <span class="detail-price" id="productPrice">$0.00</span>
+            <span class="detail-original" id="productOriginalPrice"></span>
+            <span class="detail-discount" id="productDiscount"></span>
+          </div>
+
+          <p class="product-desc" id="productDesc">
+            Loading description...
+          </p>
+
+          <div class="product-features">
+            <h4>Key Features</h4>
+            <ul class="features-list" id="productFeatures">
+              <!-- Filled by JS -->
+            </ul>
+          </div>
+
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn" id="qtyMinus" aria-label="Decrease quantity">−</button>
+              <input type="number" class="qty-input" id="qtyInput" value="1" min="1" max="99">
+              <button class="qty-btn" id="qtyPlus" aria-label="Increase quantity">+</button>
+            </div>
+            
+            <button class="btn btn-primary btn-lg add-to-cart-btn" id="addToCartBtn">
+              Add to Cart 🛒
+            </button>
+          </div>
+          
+          <div style="margin-top: var(--space-md); padding-top: var(--space-md); border-top: 1px solid var(--color-border-light); font-size: var(--fs-xs); color: var(--color-text-secondary); display:flex; gap:16px;">
+            <span>🚚 Free Shipping</span>
+            <span>🛡️ 30-Day Guarantee</span>
+            <span>🔒 Secure Checkout</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="related-products">
+    <div class="container">
+      <div class="related-header reveal">
+        <h2>You May Also Like</h2>
+      </div>
+      <div class="grid-4" id="relatedGrid" data-stagger>
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:white;">
+            <div class="logo-icon">🎂</div>
+            <span>CakeTools</span>
+          </a>
+          <p>Your one-stop shop for premium cake decorating tools.</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 CakeTools. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/three-scenes.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+</html>

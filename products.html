@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products — CakeTools</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+</head>
+<body>
+
+  <!-- Header Placeholder (Filled by JS, but since this is static, I will include the full header for SEO/No-JS fallback) -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎂</div>
+        <span>CakeTools</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-right" style="display:flex;align-items:center;gap:12px;">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <span class="current">Products</span>
+    </nav>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-hero" style="padding: var(--space-xl) 0; min-height: auto;">
+    <div class="container">
+      <h1 style="font-size: var(--fs-4xl); margin-bottom: var(--space-sm);">All Products</h1>
+      <p style="font-size: var(--fs-base);">Discover our complete collection of premium cake decorating tools.</p>
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="container">
+    <div class="products-layout">
+      <!-- Sidebar -->
+      <aside class="products-sidebar">
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Categories</h3>
+          <div class="category-filter-list" id="categoryFilterList">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <!-- Optional: Price Filter (UI only for this static demo) -->
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Price Range</h3>
+          <div class="price-range-wrapper">
+            <input type="range" class="price-range-slider" min="0" max="100" value="50">
+            <div class="price-labels">
+              <span>$0</span>
+              <span>$100+</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Content -->
+      <main class="products-content">
+        <div class="products-search-wrapper">
+          <span class="search-icon-inner">🔍</span>
+          <input type="text" class="products-search-bar" id="productsSearch" placeholder="Search by name, category, or description..." autocomplete="off">
+        </div>
+
+        <div class="products-header">
+          <div class="products-count" id="productsCount">
+            Showing <strong>0</strong> products
+          </div>
+          
+          <div class="products-sort">
+            <label for="sortSelect">Sort by:</label>
+            <select class="sort-select" id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="name">Name (A-Z)</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="active-filters" id="activeFilters">
+          <!-- Filled by JS -->
+        </div>
+
+        <div class="products-grid-page" id="productsGrid">
+          <!-- Filled by JS -->
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer Placeholder -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:white;">
+            <div class="logo-icon">🎂</div>
+            <span>CakeTools</span>
+          </a>
+          <p>Your one-stop shop for premium cake decorating tools.</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 CakeTools. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

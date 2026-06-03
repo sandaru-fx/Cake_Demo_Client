@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CakeTools - Premium cake decorating tools and supplies. Professional quality piping tips, fondant tools, cake molds, and more for every baker.">
+  <title>CakeTools — Premium Cake Decorating Tools & Supplies</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎂</div>
+        <span>CakeTools</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-right" style="display:flex;align-items:center;gap:12px;">
+        <div class="search-wrapper">
+          <input type="text" class="search-bar" id="searchBar" placeholder="Search cake tools..." autocomplete="off">
+          <span class="search-icon">🔍</span>
+          <div class="search-dropdown" id="searchDropdown"></div>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          ✨ Premium Quality Tools
+        </div>
+        <h1>Craft Beautiful <span class="highlight">Cakes</span> Like a Pro</h1>
+        <p class="hero-description">
+          Discover our curated collection of professional-grade cake decorating tools. From piping tips to fondant kits — everything you need to create stunning masterpieces.
+        </p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-primary btn-lg">Shop Now →</a>
+          <a href="categories.html" class="btn btn-secondary btn-lg">Browse Categories</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-number" data-count="500" data-suffix="+">0</div>
+            <div class="stat-label">Products</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number" data-count="12000" data-suffix="+">0</div>
+            <div class="stat-label">Happy Bakers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number" data-count="4" data-suffix=".9★">0</div>
+            <div class="stat-label">Rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Three.js Hero Canvas -->
+    <div class="hero-3d" id="heroCanvas"></div>
+  </section>
+
+  <!-- Trusted By Banner -->
+  <section class="trusted-banner">
+    <div class="container">
+      <div class="trusted-inner">
+        <div class="trusted-item">
+          <span class="icon">🚚</span>
+          <span>Free Shipping Over $50</span>
+        </div>
+        <div class="trusted-item">
+          <span class="icon">🛡️</span>
+          <span>Quality Guaranteed</span>
+        </div>
+        <div class="trusted-item">
+          <span class="icon">↩️</span>
+          <span>30-Day Returns</span>
+        </div>
+        <div class="trusted-item">
+          <span class="icon">💬</span>
+          <span>24/7 Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section home-categories" id="categories">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Categories</span>
+        <h2 class="section-title">Shop By Category</h2>
+        <p class="section-subtitle">Find exactly what you need from our carefully organized collection of cake decorating tools.</p>
+      </div>
+
+      <div class="categories-grid" id="categoriesGrid" data-stagger>
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section featured-products" id="featured">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Featured</span>
+        <h2 class="section-title">Best Sellers</h2>
+        <p class="section-subtitle">Our most popular tools loved by professional and home bakers worldwide.</p>
+      </div>
+
+      <div class="products-grid" id="featuredGrid" data-stagger>
+        <!-- Filled by JS -->
+      </div>
+
+      <div class="view-all-wrapper reveal">
+        <a href="products.html" class="btn btn-secondary btn-lg">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section why-us" id="whyUs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Why Us</span>
+        <h2 class="section-title">Why Choose CakeTools?</h2>
+        <p class="section-subtitle">We're passionate about helping bakers create extraordinary cakes.</p>
+      </div>
+
+      <div class="why-us-grid" data-stagger>
+        <div class="why-card reveal">
+          <div class="why-icon">🏆</div>
+          <h4>Premium Quality</h4>
+          <p>Every tool is handpicked and tested to ensure professional-grade quality and durability.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">💰</div>
+          <h4>Best Prices</h4>
+          <p>Competitive prices without compromising on quality. Get the best value for your money.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">🚀</div>
+          <h4>Fast Delivery</h4>
+          <p>Quick processing and reliable shipping to get your tools to you as fast as possible.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">❤️</div>
+          <h4>Expert Support</h4>
+          <p>Our team of baking enthusiasts is always here to help you choose the right tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Reviews</span>
+        <h2 class="section-title">What Bakers Say</h2>
+        <p class="section-subtitle">Hear from our happy customers who trust CakeTools for their baking needs.</p>
+      </div>
+
+      <div class="testimonials-grid" data-stagger>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The Russian piping tips set completely changed my cake game! The quality is outstanding and the results are absolutely stunning every time."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SR</div>
+            <div class="testimonial-info">
+              <h5>Sarah Rodriguez</h5>
+              <p>Professional Baker</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Best cake tools shop I've found! Fast shipping, excellent quality, and the customer service is incredibly helpful. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MK</div>
+            <div class="testimonial-info">
+              <h5>Mike Kim</h5>
+              <p>Home Baker</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The fondant toolkit is a dream to work with. Every tool is well-made and the embossing results are incredibly detailed. Love it!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">EP</div>
+            <div class="testimonial-info">
+              <h5>Emma Patel</h5>
+              <p>Cake Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Ready to Create Amazing Cakes?</h2>
+        <p>Join thousands of bakers who trust CakeTools for their creative journey.</p>
+        <div class="cta-buttons">
+          <a href="products.html" class="btn btn-primary btn-lg">Shop All Products ✨</a>
+          <a href="contact.html" class="btn btn-secondary btn-lg" style="border-color: rgba(255,255,255,0.3); color: white;">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🎂</div>
+            <span>CakeTools</span>
+          </a>
+          <p>Your one-stop shop for premium cake decorating tools and supplies. Helping bakers create stunning masterpieces since 2020.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Pinterest">📌</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="products.html?category=piping-tips">Piping Tips</a></li>
+            <li><a href="products.html?category=fondant-tools">Fondant Tools</a></li>
+            <li><a href="products.html?category=cake-molds">Cake Molds</a></li>
+            <li><a href="products.html?category=decorating-supplies">Decorating</a></li>
+            <li><a href="products.html?category=baking-essentials">Baking</a></li>
+            <li><a href="products.html?category=packaging-display">Packaging</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter</h4>
+          <p style="color: rgba(255,255,255,0.6); font-size: 0.875rem; margin-bottom: 1rem;">Get the latest updates on new tools and exclusive offers!</p>
+          <input type="email" class="form-input" placeholder="Your email address">
+          <button class="btn btn-primary" style="width: 100%; margin-top: 8px;">Subscribe ✨</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 CakeTools. All rights reserved. Made with 🎂 and ❤️</p>
+        <p>
+          <a href="#" style="color: rgba(255,255,255,0.5);">Privacy Policy</a> ·
+          <a href="#" style="color: rgba(255,255,255,0.5);">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/three-scenes.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Render categories
+      const catGrid = document.getElementById('categoriesGrid');
+      if (catGrid) {
+        catGrid.innerHTML = CATEGORIES.map((cat, i) => `
+          <a href="products.html?category=${cat.id}" class="category-card reveal" style="transition-delay: ${i * 100}ms;">
+            <div class="category-icon" style="background: ${cat.gradient}; color: white;">
+              ${cat.emoji}
+            </div>
+            <h3>${cat.name}</h3>
+            <p>${cat.description}</p>
+            <span class="category-count">${cat.productCount} Products</span>
+          </a>
+        `).join('');
+      }
+
+      // Render featured products
+      const featGrid = document.getElementById('featuredGrid');
+      if (featGrid) {
+        const featured = getFeaturedProducts(8);
+        featGrid.innerHTML = featured.map((p, i) => renderProductCard(p, i * 100)).join('');
+      }
+
+      // Init Three.js hero scene
+      try {
+        new HeroCakeScene('heroCanvas');
+      } catch(e) {
+        console.log('Three.js hero scene error:', e);
+      }
+    });
+  </script>
+</body>
+</html>

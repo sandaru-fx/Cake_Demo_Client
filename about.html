@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — CakeTools</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎂</div>
+        <span>CakeTools</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-right" style="display:flex;align-items:center;gap:12px;">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Hero -->
+  <section class="about-hero">
+    <div class="container reveal">
+      <h1>Our Sweet Story</h1>
+      <p>Empowering bakers to turn their imagination into delicious reality through premium quality tools.</p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-content reveal-left">
+          <h2>Born from a Passion for Baking</h2>
+          <p>Founded in 2020 by a team of professional pastry chefs, CakeTools was born out of frustration with the lack of accessible, high-quality cake decorating tools on the market.</p>
+          <p>We realized that whether you're a seasoned professional running a bakery or an enthusiastic home baker crafting weekend treats, you need reliable tools that won't let you down.</p>
+          <p>Today, we're proud to serve over 12,000 bakers worldwide, providing them with the professional-grade equipment they need to create show-stopping cakes.</p>
+        </div>
+        <div class="story-image reveal-right">
+          👩‍🍳
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="values-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Values</span>
+        <h2>What We Stand For</h2>
+      </div>
+      
+      <div class="values-grid" data-stagger>
+        <div class="value-card reveal">
+          <span class="value-icon">✨</span>
+          <h3>Quality First</h3>
+          <p class="text-secondary">We personally test every single tool before adding it to our catalog. If we wouldn't use it in a professional kitchen, we won't sell it.</p>
+        </div>
+        
+        <div class="value-card reveal">
+          <span class="value-icon">🤝</span>
+          <h3>Community</h3>
+          <p class="text-secondary">We believe in supporting bakers at every level. Our community is built on sharing knowledge, tips, and inspiration.</p>
+        </div>
+        
+        <div class="value-card reveal">
+          <span class="value-icon">🌱</span>
+          <h3>Sustainability</h3>
+          <p class="text-secondary">We're committed to reducing plastic waste by offering reusable, durable tools that replace single-use baking products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background: var(--gradient-dark); color: white; text-align: center;">
+    <div class="container reveal">
+      <h2 style="color: white; margin-bottom: var(--space-md);">Join Our Community</h2>
+      <p style="font-size: var(--fs-lg); max-width: 600px; margin: 0 auto var(--space-xl); color: rgba(255,255,255,0.8);">Ready to elevate your baking game? Explore our collection of premium tools today.</p>
+      <a href="products.html" class="btn btn-primary btn-lg">Shop The Collection ✨</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:white;">
+            <div class="logo-icon">🎂</div>
+            <span>CakeTools</span>
+          </a>
+          <p>Your one-stop shop for premium cake decorating tools.</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 CakeTools. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
