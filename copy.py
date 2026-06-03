@@ -8,12 +8,8 @@ dest_dir = r"c:\Users\User\Desktop\demo cake tools\assets\images"
 os.makedirs(dest_dir, exist_ok=True)
 
 mappings = {
-    "piping_tips_*.png": "piping-tips.png",
-    "fondant_tools_*.png": "fondant-tools.png",
-    "cake_molds_*.png": "cake-molds.png",
-    "decorating_supplies_*.png": "decorating-supplies.png",
-    "baking_essentials_*.png": "baking-essentials.png",
-    "packaging_display_*.png": "packaging-display.png",
+    "about_story_*.png": "about-story.png",
+    "contact_map_*.png": "contact-map.png",
 }
 
 for pattern, new_name in mappings.items():
