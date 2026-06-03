@@ -58,7 +58,8 @@
 
 .category-card-large:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 12px 40px rgba(255, 179, 71, 0.3);
+  border-color: #FFB347;
 }
 
 .cat-card-header {
