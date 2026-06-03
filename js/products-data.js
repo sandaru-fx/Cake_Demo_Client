@@ -85,7 +85,7 @@ const PRODUCTS = [
     features: ['24 unique floral tips', 'Food-grade stainless steel', 'Dishwasher safe', 'Includes coupling & bag', 'Gift box packaging'],
     badge: 'Best Seller',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=600&q=80'
+    image: 'assets/images/fondant-tools.png'
   },
   {
     id: 2,
@@ -99,7 +99,7 @@ const PRODUCTS = [
     features: ['55 professional tips', 'Organized storage case', 'Tip chart included', 'Rust-resistant', 'Professional grade'],
     badge: 'Premium',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1607478900766-efe13248b125?w=600&q=80'
+    image: 'assets/images/piping-tips.png'
   },
   {
     id: 3,
@@ -113,7 +113,7 @@ const PRODUCTS = [
     features: ['12 specialized tips', 'Seamless construction', 'Polished finish', 'Color-coded chart', 'Storage pouch'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80'
+    image: 'assets/images/baking-essentials.png'
   },
   {
     id: 4,
@@ -127,7 +127,7 @@ const PRODUCTS = [
     features: ['8 large star tips', 'Open & closed star', 'Heavy-duty steel', 'Easy to clean', 'Size guide included'],
     badge: 'Popular',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1558636508-e0969431e58c?w=600&q=80'
+    image: 'assets/images/decorating-supplies.png'
   },
   {
     id: 5,
@@ -141,7 +141,7 @@ const PRODUCTS = [
     features: ['6 writing tips', 'Ultra-fine precision', 'Sizes #1 to #6', 'Stainless steel', 'Practice sheets included'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80'
+    image: 'assets/images/decorating-supplies.png'
   },
 
   // ─── FONDANT TOOLS ─────────────────────────────
@@ -157,7 +157,7 @@ const PRODUCTS = [
     features: ['Non-stick silicone', '4 thickness guides', '20 inch length', 'Ergonomic handles', 'Easy to clean'],
     badge: 'Best Seller',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1600398137947-a2d63be00eb3?w=600&q=80'
+    image: 'assets/images/cake-molds.png'
   },
   {
     id: 7,
@@ -171,7 +171,7 @@ const PRODUCTS = [
     features: ['3-piece set', 'Ergonomic grip', 'Flat & curved smoothers', 'Edge finisher', 'BPA-free plastic'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1464349153735-7db50ed83c84?w=600&q=80'
+    image: 'assets/images/fondant-tools.png'
   },
   {
     id: 8,
@@ -185,7 +185,7 @@ const PRODUCTS = [
     features: ['68 pieces total', 'Letters & numbers', 'Flower plunger cutters', 'Embossing stamps', 'Storage case included'],
     badge: 'Premium',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=600&q=80'
+    image: 'assets/images/fondant-tools.png'
   },
   {
     id: 9,
@@ -199,7 +199,7 @@ const PRODUCTS = [
     features: ['6 pattern mats', 'Food-grade silicone', 'Flexible & durable', 'Easy release', 'Dishwasher safe'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=600&q=80'
+    image: 'assets/images/about-quality.png'
   },
   {
     id: 10,
@@ -213,7 +213,7 @@ const PRODUCTS = [
     features: ['14 dual-ended tools', 'Ball tools & veining', 'Shell & bone tools', 'Non-slip handles', 'Tool roll included'],
     badge: 'Popular',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80'
+    image: 'assets/images/piping-tips.png'
   },
 
   // ─── CAKE MOLDS & PANS ────────────────────────
@@ -229,7 +229,7 @@ const PRODUCTS = [
     features: ['3 sizes: 6", 8", 10"', 'Anodized aluminum', 'Even heat distribution', 'Straight sides', '2" depth'],
     badge: 'Best Seller',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1604413191066-4dd20bedf486?w=600&q=80'
+    image: 'assets/images/piping-tips.png'
   },
   {
     id: 12,
@@ -243,7 +243,7 @@ const PRODUCTS = [
     features: ['Cast aluminum', 'Heritage design', 'Non-stick coating', '10-cup capacity', 'Lifetime warranty'],
     badge: 'Premium',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=600&q=80'
+    image: 'assets/images/fondant-tools.png'
   },
   {
     id: 13,
@@ -257,7 +257,7 @@ const PRODUCTS = [
     features: ['6 unique shapes', 'Food-grade silicone', 'Oven & freezer safe', 'Easy release', 'Vibrant colors'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1582716401301-b2407dc7563d?w=600&q=80'
+    image: 'assets/images/decorating-supplies.png'
   },
   {
     id: 14,
@@ -271,7 +271,7 @@ const PRODUCTS = [
     features: ['Numbers 0-9', 'Adjustable templates', 'Food-safe material', 'Reusable', 'Instruction booklet'],
     badge: 'Trending',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&q=80'
+    image: 'assets/images/decorating-supplies.png'
   },
   {
     id: 15,
@@ -285,7 +285,7 @@ const PRODUCTS = [
     features: ['Large dome shape', 'Heavy-gauge steel', 'Non-stick coating', '8" diameter', 'Easy unmolding'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80'
+    image: 'assets/images/piping-tips.png'
   },
 
   // ─── DECORATING SUPPLIES ───────────────────────
@@ -301,7 +301,7 @@ const PRODUCTS = [
     features: ['12" aluminum plate', '360° smooth rotation', 'Non-slip rubber base', 'Ball-bearing mechanism', 'Supports 50+ lbs'],
     badge: 'Best Seller',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80'
+    image: 'assets/images/decorating-supplies.png'
   },
   {
     id: 17,
@@ -315,7 +315,7 @@ const PRODUCTS = [
     features: ['4 sizes included', 'Stainless steel blade', 'Ergonomic handles', 'Offset design', 'Lifetime guarantee'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=600&q=80'
+    image: 'assets/images/about-quality.png'
   },
   {
     id: 18,
@@ -329,7 +329,7 @@ const PRODUCTS = [
     features: ['8 unique patterns', 'Stainless steel', 'Smooth & textured', 'Comfortable grip', 'Dishwasher safe'],
     badge: 'Popular',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80'
+    image: 'assets/images/decorating-supplies.png'
   },
   {
     id: 19,
@@ -343,7 +343,7 @@ const PRODUCTS = [
     features: ['Quiet compressor', 'Fine mist nozzle', '0.3mm needle', 'Gravity feed cup', '8 food colors included'],
     badge: 'Premium',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1616690248053-f0e8b07fe2b6?w=600&q=80'
+    image: 'assets/images/about-eco.png'
   },
   {
     id: 20,
@@ -357,7 +357,7 @@ const PRODUCTS = [
     features: ['12 unique designs', 'Food-safe plastic', 'Reusable & washable', 'Universal size', 'Design guide included'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1559620192-032c4bc4674e?w=600&q=80'
+    image: 'assets/images/baking-essentials.png'
   },
 
   // ─── BAKING ESSENTIALS ─────────────────────────
@@ -373,7 +373,7 @@ const PRODUCTS = [
     features: ['7-piece set', 'Laser-etched marks', 'Stainless steel', 'Nesting design', 'Ergonomic handles'],
     badge: 'Best Seller',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80'
+    image: 'assets/images/piping-tips.png'
   },
   {
     id: 22,
@@ -387,7 +387,7 @@ const PRODUCTS = [
     features: ['5 sizes with lids', 'Tempered glass', 'Pour spout', 'Non-slip base', 'Stackable design'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?w=600&q=80'
+    image: 'assets/images/cake-molds.png'
   },
   {
     id: 23,
@@ -401,7 +401,7 @@ const PRODUCTS = [
     features: ['3 sizes included', 'Stainless steel wires', 'Comfortable grip', 'Balanced weight', 'Hanging loop'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80'
+    image: 'assets/images/about-quality.png'
   },
   {
     id: 24,
@@ -415,7 +415,7 @@ const PRODUCTS = [
     features: ['3 sizes included', 'Non-stick surface', 'Measurement guides', '3000+ uses each', 'FDA approved'],
     badge: 'Eco-Friendly',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1570145820259-b5b80c5c8bd6?w=600&q=80'
+    image: 'assets/images/packaging-display.png'
   },
   {
     id: 25,
@@ -429,7 +429,7 @@ const PRODUCTS = [
     features: ['Instant read (2-3s)', 'Fold-out probe', 'LCD backlit display', 'Auto-off feature', 'Waterproof design'],
     badge: 'Popular',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1602526212974-3b1a0ed4debb?w=600&q=80'
+    image: 'assets/images/baking-essentials.png'
   },
 
   // ─── PACKAGING & DISPLAY ───────────────────────
@@ -445,7 +445,7 @@ const PRODUCTS = [
     features: ['10 boxes per pack', 'Clear window display', 'Sturdy corrugated', '10" & 12" sizes', 'Easy assembly'],
     badge: 'Best Seller',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1558636508-e0969431e58c?w=600&q=80'
+    image: 'assets/images/cake-molds.png'
   },
   {
     id: 27,
@@ -459,7 +459,7 @@ const PRODUCTS = [
     features: ['15 boards total', '3 sizes: 8", 10", 12"', 'Gold foil finish', 'Food-safe cardboard', 'Grease resistant'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1549785701-d23cd0e1e1e2?w=600&q=80'
+    image: 'assets/images/decorating-supplies.png'
   },
   {
     id: 28,
@@ -473,7 +473,7 @@ const PRODUCTS = [
     features: ['3-tier design', 'Crystal clear acrylic', 'Supports 30+ lbs', 'Easy assembly', 'Elegant finish'],
     badge: 'Premium',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1611293388250-580b08c4a145?w=600&q=80'
+    image: 'assets/images/packaging-display.png'
   },
   {
     id: 29,
@@ -487,7 +487,7 @@ const PRODUCTS = [
     features: ['20 boxes per pack', 'Individual inserts', 'Clear window', 'Ribbon ties included', 'Multiple colors'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1612197527762-8cfb9b6ceeab?w=600&q=80'
+    image: 'assets/images/fondant-tools.png'
   },
   {
     id: 30,
@@ -501,7 +501,7 @@ const PRODUCTS = [
     features: ['6 color rolls', '25 yards each', 'Double-faced satin', 'Pastel & metallic', 'Multiple widths'],
     badge: null,
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1562440499-64c9a111f713?w=600&q=80'
+    image: 'assets/images/fondant-tools.png'
   }
 ];
 
